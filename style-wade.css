@@ -1,0 +1,38 @@
+:root {
+  --color-gold: #D4AF37;
+  --color-night: #2C3E50;
+  --color-turquoise: #1ABC9C;
+  --color-orange: #E67E22;
+  --color-forest: #27AE60;
+  --color-elegant-gray: #34495E;
+  --color-light-gray: #BDC3C7;
+  --color-soft-green: #2ECC71;
+  --color-text-light: #ECF0F1;
+}
+.box-wade{
+    animation: backgroundCycle 20s infinite;
+    transition: background-color 2s ease-in-out;
+}
+@keyframes backgroundCycle {
+  0%   { background-color: var(--color-night); }
+  25%  { background-color: var(--color-turquoise); }
+  50%  { background-color: var(--color-orange); }
+  75%  { background-color: var(--color-forest); }
+  100% { background-color: var(--color-night); }
+}
+h2.title {
+  border: 1px solid var(--color-gold);
+  margin: 16px;
+  padding: 0.6em;
+  background-color: var(--color-elegant-gray);
+  border-radius: 10px;
+  box-shadow: 3px 2px 3px rgba(0, 0, 0, 0.2);
+  color: var(--color-text-light);
+}
+
+h2.title:hover {
+  background-color: var(--color-soft-green);
+  color: #fff;
+  transition: transform 0.3s ease;
+  box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.4);
+}
