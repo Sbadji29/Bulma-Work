@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page de Connexion - Bulma</title>
+    <!-- Lien CDN Bulma -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css">
+
+    <!-- Lien vers notre CSS personnalisé -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Section principale centrée verticalement et horizontalement -->
+    <section class="section">
+        <div class="container">
+            <div class="columns is-centered">
+                <div class="column is-one-third">
+                    
+                    <!-- Carte Bulma pour contenir le formulaire -->
+                    <div class="card">
+                        <div class="card-content">
+                            
+                            <!-- Titre centré -->
+                            <h2 class="title is-2 has-text-centered mb-5">Connexion</h2>
+
+                            <!-- Formulaire de connexion -->
+                            <form id="loginForm">
+                                
+                                <!-- Champ Email avec icône -->
+                                <div class="field">
+                                    <label class="label">Email</label>
+                                    <div class="control has-icons-left">
+                                        <input class="input" type="email" id="email" placeholder="Entrez votre email" required>
+                                        <span class="icon is-small is-left">
+                                            <i class="fas fa-envelope"></i>
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <!-- Champ Mot de passe avec icône -->
+                                <div class="field">
+                                    <label class="label">Mot de passe</label>
+                                    <div class="control has-icons-left">
+                                        <input class="input" type="password" id="password" placeholder="Entrez votre mot de passe" required>
+                                        <span class="icon is-small is-left">
+                                            <i class="fas fa-lock"></i>
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <!-- Bouton de connexion -->
+                                <div class="field">
+                                    <div class="control">
+                                        <button type="submit" class="button is-primary is-fullwidth is-medium">
+                                            <span class="icon">
+                                                <i class="fas fa-sign-in-alt"></i>
+                                            </span>
+                                            <span>Se connecter</span>
+                                        </button>
+                                    </div>
+                                </div>
+
+                            </form>
+
+                            <!-- Zone pour afficher les messages -->
+                            <div id="message" class="notification is-hidden mt-4"></div>
+
+                        </div>
+                    </div>
+
+                    <!-- Message pour les nouveaux utilisateurs -->
+                    <div class="has-text-centered mt-4">
+                        <p class="is-size-7">
+                            Pas encore de compte ? 
+                            <a href="#" class="has-text-link">Créer un compte</a>
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- JavaScript -->
+    <script src="vue.js"></script>
+</body>
+</html>

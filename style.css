@@ -1,0 +1,38 @@
+
+body {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Personnalisation de la carte */
+.card {
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    border: none;
+}
+
+/* Animation pour les notifications */
+.notification {
+    transition: all 0.3s ease;
+}
+
+/* Style pour les champs valides */
+.input:valid {
+    border-color: #00d1b2;
+}
+
+/* Style pour les champs invalides */
+.input:invalid:not(:placeholder-shown) {
+    border-color: #ff3860;
+}
+
+/* Responsive : ajustement sur mobile */
+@media screen and (max-width: 768px) {
+    .column.is-one-third {
+        width: 90% !important;
+        margin: 0 auto;
+    }
+}
