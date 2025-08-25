@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Hello Bulma!</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/js/all.min.js"></script>
+</head>
+<body>
+    <section class="section">
+        <div class="container">
+            <div class="columns is-mobile is-centered">
+                <div class="column is-5">
+                    
+                    <!-- Logo -->
+                    <div class="has-text-centered">
+                        <figure class="image is-128x128 is-inline-block">
+                            <img src="Assets/login_image.png" alt="Logo">
+                        </figure>
+                    </div>
+
+                    <!-- Login Box -->
+                    <div class="box">
+                        <h1 class="title has-text-centered">Se connecter</h1>
+
+                        <form action="admin.html" method="post">
+                            <!-- Email -->
+                            <div class="field">
+                                <label class="label" for="email">Email</label>
+                                <div class="control has-icons-left">
+                                    <input class="input" type="email" id="email" placeholder="Entrez votre email">
+                                    <span class="icon is-small is-left">
+                                        <i class="fas fa-envelope"></i>
+                                    </span>
+                                </div>
+                            </div>
+
+                            <!-- Password -->
+                            <div class="field">
+                            <label class="label" for="password">Mot de passe</label>
+                                <div class="control has-icons-left">
+                                    <input class="input" type="password" id="password" placeholder="Entrez votre mot de passe">
+                                    <span class="icon is-small is-left">
+                                        <i class="fas fa-lock"></i>
+                                    </span>
+                                </div>
+                            </div>
+
+                            <!-- Button -->
+                            <div class="field is-grouped is-grouped-centered mt-4">
+                                <p class="control">
+                                    <button class="button is-link">Connexion</button>
+                                </p>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Hello Bulma!</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/js/all.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="box ">
+            <h1 class="title has-text-centered">Bienvenu sur la page d'accueil Admin</h1>
+        </div>
+    </header>
+    <section class="section">
+        <div class="container">
+            <div class="columns is-mobile is-centered">
+                <div class="column is-6">
+                    
+                    <!-- Logo -->
+                    <div class="has-text-centered">
+                        <figure class="image is-128x128 is-inline-block">
+                            <img src="Assets/login_image.png" alt="Logo">
+                        </figure>
+                    </div>
+
+                    <!-- Login Box -->
+                    <div class="box">
+                        <h1 class="title has-text-centered">Formulaire d'inscription</h1>
+
+                        <form action="#" method="post">
+                            <!-- Username -->
+                            <div class="field">
+                                <label class="label" for="nom">Nom</label>
+                                <div class="control has-icons-left">
+                                    <input class="input is-link" type="text" id="nom" placeholder="Entrez votre nom">
+                                    <span class="icon is-small is-left">
+                                        <i class="fas fa-user"></i>
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div class="field">
+                                <label class="label" for="prenom">Prénom</label>
+                                <div class="control has-icons-left">
+                                    <input class="input is-link" type="text" id="prenom" placeholder="Entrez votre prénom">
+                                    <span class="icon is-small is-left">
+                                        <i class="fas fa-user"></i>
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div class="field">
+                                <label class="label" for="email">Email</label>
+                                <div class="control has-icons-left">
+                                    <input class="input is-link" type="email" id="email" placeholder="Entrez votre email">
+                                    <span class="icon is-small is-left">
+                                        <i class="fas fa-envelope"></i>
+                                    </span>
+                                </div>
+                            </div>
+
+                            <!-- Password -->
+                            <div class="field">
+                            <label class="label" for="password">Mot de passe</label>
+                                <div class="control has-icons-left">
+                                    <input class="input is-link" type="password" id="password" placeholder="Entrez votre mot de passe">
+                                    <span class="icon is-small is-left">
+                                        <i class="fas fa-lock"></i>
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div class="field">
+                            <label class="label" for="confirmPassword">Confirmé mot de passe</label>
+                                <div class="control has-icons-left">
+                                    <input class="input is-link" type="password" id="confirmPassword" placeholder="Confirmez votre mot de passe">
+                                    <span class="icon is-small is-left">
+                                        <i class="fas fa-lock"></i>
+                                    </span>
+                                </div>
+                            </div>
+
+                            <!-- Button -->
+                            <div class="field is-grouped is-grouped-centered mt-4">
+                                <p class="control">
+                                    <button class="button is-link is-medium">Ajouter</button>
+                                </p>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section">
+        <div class="container">
+            <div class="columns is-mobile is-centered">
+                <div class="column is-6">
+                    <table class="table is-centered is-hoverable">
+                        <thead>
+                            <th>Nom</th>
+                            <th>Prénom</th>
+                            <th>Email</th>
+                            <th>Date</th>
+                            <th>Status</th>
+                            <th>Actions</th>
+                        </thead>
+                        <tbody>
+                            <td>Badji</td>
+                            <td>Alioune Badara Sadia</td>
+                            <td>test1@gmail.com</td>
+                            <td>22/08/2025, 12:00</td>
+                            <td>Actif</td>
+                            <td>Supprimer</td>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
